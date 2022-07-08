@@ -191,11 +191,21 @@ section {
         }
     }
 }
-
+/* === About-content === */
+.about-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
 /* === Independent components === */
 .container-btns {
     display: flex;
     align-self: flex-start;
+    .left-header{
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
 }
 .resume-btn{
     border-radius: 30px;

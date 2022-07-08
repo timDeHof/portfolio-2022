@@ -202,10 +202,22 @@ section {
   line-height: 2rem;
 }
 
+/* === About-content === */
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+
 /* === Independent components === */
 .container-btns {
   display: flex;
   align-self: flex-start;
+}
+.container-btns .left-header {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .resume-btn {
