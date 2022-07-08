@@ -196,16 +196,38 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100%;
+    .left-header{
+        display: flex;
+        align-items: center;
+        position: relative;
+        .square{
+            transition: all .4s ease-in-out;
+            width: 45%;
+            height: 45%;
+            background-color: var(--color-secondary);
+            position: absolute;
+            margin-left: 4rem;
+            z-index: -1;
+            border-radius: 10%;
+        }
+        .image{
+            transition: all .4s ease-in-out;
+            width: 45%;
+            height: 45%;
+            margin-left: 4rem;
+            .img{
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+        }
+    }
 }
 /* === Independent components === */
 .container-btns {
     display: flex;
     align-self: flex-start;
-    .left-header{
-        display: flex;
-        align-items: center;
-        position: relative;
-    }
+    
 }
 .resume-btn{
     border-radius: 30px;
