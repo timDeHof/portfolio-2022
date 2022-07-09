@@ -169,7 +169,7 @@ section {
   height: 50%;
   width: 50%;
   margin-left: 4rem;
-  background: linear-gradient(to left, #222f3d, #3d556e);
+  background: linear-gradient(to top, #222f3d, #3d556e);
   box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   transition: all 0.4s ease-in-out;
   overflow: hidden;
@@ -177,8 +177,11 @@ section {
 .header-content .left-header .image img {
   height: 100%;
   width: 100%;
-  -o-object-fit: center;
-     object-fit: center;
+  margin: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 80% 100%;
+     object-position: 80% 100%;
   transition: all 0.4s ease-in-out;
   filter: grayscale(100%);
 }
